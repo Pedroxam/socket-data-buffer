@@ -30,7 +30,7 @@ Encode:
 
 Decode:
 
-socket.on('name', (data) => {
+`socket.on('name', (data) => {
 	data = buffer.decode(data);
 	console.log(data.name); // John
-})
+})`
