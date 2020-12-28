@@ -25,11 +25,15 @@ buffer.decode( OBJECT|ARRAY|STRING );
 <h2>Using on socket.io :</h2>
 
 Encode:
+`
 socket.emit('name', buffer.encode( { name: 'John', amount: 1000 } ) );
+`
 
 Decode:
 
+`
 socket.on('name', (data) => {
 	data = buffer.decode(data);
 	console.log(data.name); // John
 })
+`
