@@ -8,32 +8,29 @@ $ npm i socket-data-buffer
 
 <h2>Usage</h2>
 
-var buffer = require('socket-data-buffer');
+`var buffer = require('socket-data-buffer');`
 
 or in ES6:
 
-import buffer from 'socket-data-buffer';
+`import buffer from 'socket-data-buffer';`
 
 <h2>Example</h2>
 
 Encode value
-buffer.encode( OBJECT|ARRAY|STRING );
+`buffer.encode( OBJECT|ARRAY|STRING );`
 
 Decode value
-buffer.decode( OBJECT|ARRAY|STRING );
+`buffer.decode( OBJECT|ARRAY|STRING );`
 
 <h2>Using on socket.io :</h2>
 
 Encode:
-`
-socket.emit('name', buffer.encode( { name: 'John', amount: 1000 } ) );
-`
+
+`socket.emit('name', buffer.encode( { name: 'John', amount: 1000 } ) );`
 
 Decode:
 
-`
-socket.on('name', (data) => {
+`socket.on('name', (data) => {
 	data = buffer.decode(data);
 	console.log(data.name); // John
-})
-`
+})`
