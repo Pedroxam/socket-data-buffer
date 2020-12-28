@@ -4,7 +4,7 @@ Get better security and speed over your socket.
 
 <h2>Installation</h2>
 
-$ npm i socket-data-buffer
+`$ npm i socket-data-buffer`
 
 <h2>Usage</h2>
 
