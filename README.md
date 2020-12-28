@@ -1,12 +1,12 @@
 # socket-data-buffer
 Encode and Decode values to buffer values for using on socket connections.
-
 Get better security and speed over your socket.
 
-Installation
+<h2>Installation</h2>
+
 $ npm i socket-data-buffer
 
-Usage
+<h2>Usage</h2>
 
 var buffer = require('socket-data-buffer');
 
@@ -14,7 +14,7 @@ or in ES6:
 
 import buffer from 'socket-data-buffer';
 
-Example
+<h2>Example</h2>
 
 Encode value
 buffer.encode( OBJECT|ARRAY|STRING );
@@ -22,7 +22,7 @@ buffer.encode( OBJECT|ARRAY|STRING );
 Decode value
 buffer.decode( OBJECT|ARRAY|STRING );
 
-Using on socket.io :
+<h2>Using on socket.io :</h2>
 
 Encode:
 socket.emit('name', buffer.encode( { name: 'John', amount: 1000 } ) );
